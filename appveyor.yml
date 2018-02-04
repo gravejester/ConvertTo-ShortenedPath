@@ -92,7 +92,7 @@ deploy_script:
             Verbose = $false
         }
         Write-Host "Before publishing module to gallery. The publish properties are:"
-        Write-Host $publishProperties
+        Write-Output $publishProperties
         try {
             Publish-Module @publishProperties
         }

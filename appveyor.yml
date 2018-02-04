@@ -45,7 +45,7 @@ test_script:
       #--------------------#
       Add-AppveyorTest -Name "ScriptAnalyzer" -Outcome Running
       $start = Get-Date
-      $res = Get-ChildItem *.ps*1 -Recurse | Invoke-ScriptAnalyzer -Severity $env:ScriptAnalyzerSeverity
+      $res = Invoke-ScriptAnalyzer -Path ConvertTo-ShortenedPath.psm1 -Severity $env:ScriptAnalyzerSeverity
       $end = Get-Date
       [TimeSpan]$duration = $end - $start
       if ($res) {

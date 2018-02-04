@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/chnleew3d051w9qk?svg=true)](https://ci.appveyor.com/project/gravejester/convertto-shortenedpath)
+
 # ConvertTo-ShortenedPath
 
 PowerShell function to shorten paths.

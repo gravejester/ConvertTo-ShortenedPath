@@ -91,6 +91,8 @@ deploy_script:
             LicenseUri = $manifest.PrivateData.PSData.LicenseUri
             Verbose = $false
         }
+        Write-Host "Before publishing module to gallery. The publish properties are:"
+        Write-Host $publishProperties
         try {
             Publish-Module @publishProperties
         }
